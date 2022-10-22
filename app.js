@@ -1,18 +1,56 @@
-const today = new Date()
+/*
+if(condition){
+        if statements
+} else {
+        else statements
+}
 
-let val
-val = today
-val = today.getMonth() //0 = jaanuar
-val = today.getDate()
-val = today.getDay()
-val = today.getFullYear()
-val = today.getHours()
-val = today.getMinutes()
-val = today.getTime()
+== equal -> ===
+!= not equal -> !==
+ */
 
-val = new Date("09/22/2021")
-val= new Date('September 23 2022')
-val.setDate(23)
-val.setFullYear(2023)
+/*let color = 'red';
 
-console.log(val)
+if(color === 'red'){
+    console.log('Stop!')
+} else if(color === 'yellow'){
+    console.log('Attention!')
+} else if(color === 'green'){
+    console.log("GO!")
+} else{
+    console.log("Error")
+}
+/*
+
+ */
+const name = 'Kadi'
+const age = 40
+
+if(age > 0 && age <= 12){
+    console.log(`${name} on laps`)
+} else if(age > 12 && age < 18){
+    console.log(`${name} on noorem`)
+} else {
+    console.log(`${name} on täiskasvanu`)
+}
+
+let id = 5
+if(id === 100){
+    console.log("ok")
+} else{
+    console.log('no')
+}
+
+//? - ternary
+console.log(id === 100 ? "ok":"no")
+
+//switch
+const color = 'red'
+
+switch (color) {
+    case "red":
+        console.log('stop!')
+        break;
+    default:
+        console.log('error!')
+}
