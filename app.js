@@ -1,23 +1,23 @@
 const firstname = 'Lilii'
 const surname = 'Older'
+const email = 'lilii-ann.older@voco.ee'
+const dep = 'IKT'
 
-let val = firstname + ' ' + surname
-val = 'lilii'
-val += surname
-val = firstname.toUpperCase()
-val = surname.toLowerCase()
-val = surname[0]
-val = surname.indexOf('o')
-val = surname.lastIndexOf('l')
-val = surname.charAt(2)
-val = surname.charAt(surname.length - 1)
-val = surname.substring(0, 4)
-val = surname.slice(0, 4)
-val = surname.slice(-3)
+let result = "<ul>"+
+    "<li><b>Name:</b>" + firstname + "</li>"+
+    "<li><b>Surname:</b>" + surname + "</li>"+
+    "<li><b>Email:</b>" + email + "</li>"+
+    "<li><b>Department:</b>" + dep + "</li>"+
+    '</ul>'
 
-const tags = 'JS, HTML, PY'
-val = tags.split(',')
+result = `
+    <ul>
+        <li><b>Name:</b> ${firstname}</li>
+        <li><b>Surname:</b> ${surname}</li>
+        <li><b>Email:</b> ${email}</li>
+        <li><b>Department:</b> ${dep}</li>
+    </ul>`
 
 
-
-console.log(val[1].trim())
+console.log(result)
+document.body.innerHTML = result
