@@ -1,56 +1,27 @@
-/*
-if(condition){
-        if statements
-} else {
-        else statements
+console.log('For loop')
+for (let i = 0; i < 10; i++) {
+    if(i == 5){
+        //break
+        continue
+    }
+    console.log(i)
 }
 
-== equal -> ===
-!= not equal -> !==
- */
-
-/*let color = 'red';
-
-if(color === 'red'){
-    console.log('Stop!')
-} else if(color === 'yellow'){
-    console.log('Attention!')
-} else if(color === 'green'){
-    console.log("GO!")
-} else{
-    console.log("Error")
-}
-/*
-
- */
-const name = 'Kadi'
-const age = 40
-
-if(age > 0 && age <= 12){
-    console.log(`${name} on laps`)
-} else if(age > 12 && age < 18){
-    console.log(`${name} on noorem`)
-} else {
-    console.log(`${name} on täiskasvanu`)
+console.log('while loop')
+let number1 = 0;
+while (number1 < 10){
+    //console.log(number1)
+    //number1++
 }
 
-let id = 5
-if(id === 100){
-    console.log("ok")
-} else{
-    console.log('no')
-}
+console.log('do-while loop')
+let number2 = 11;
+do {
+    console.log(number2)
+    number2++
+} while(number2 < 10)
 
-//? - ternary
-console.log(id === 100 ? "ok":"no")
-
-//switch
-const color = 'red'
-
-switch (color) {
-    case "red":
-        console.log('stop!')
-        break;
-    default:
-        console.log('error!')
-}
+const cars = ['Audi', 'Tesla', 'BMW']
+cars.forEach((car) => {
+    console.log(car)
+})
